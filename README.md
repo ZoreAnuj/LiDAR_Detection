@@ -58,3 +58,8 @@ Run the code by entering following in the terminal
 ```shell
 ./environment
 ```
+## Results
+
+!(project-1-1.gif)
+
+!(project-1-2.gif)
