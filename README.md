@@ -20,12 +20,6 @@ For this project submission, the following tasks were completed for object detec
 3. Implement Euclidean clustering: identifies objects from the KD-tree groups and encompasses the groups with a bounding box
 4. Stream real point cloud data: detect object in real time in a point cloud stream
 
-
-RANSAC for a plane was implemented with the following functions in `processPointClouds.cpp`: 
-1. `ProcessPointClouds::Ransac3DHelper`: helper function which iteratively picks three points to form a plane. Returns a set of inliers for the plane of best fit if found
-2. `ProcessPointClouds::SegmentPlaneRansac`: takes a point cloud and calls `Ransac3DHelper` to process the set of inlier points
-3. `ProcessPointClouds::SeperateClouds`: seperates the point cloud from inlier points (road plane) and outlier points (object plane)
-
 After segmenting the point cloud, the object plane is used for object detection.
 
   ![Alt text](pointcloud-sample.png)|![Alt text](plane-segmentation.png)
@@ -60,6 +54,7 @@ Run the code by entering following in the terminal
 ```
 ## Results
 
-!(project-1-1.gif)
+![Alt text](project-1-1.gif)
 
-!(project-1-2.gif)
+![Alt text](project-1-2.gif)
+
